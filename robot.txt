@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap - si usas domain personalizado asegúrate que la URL coincida
+Sitemap: https://hbclinic.cl/sitemap.xml
