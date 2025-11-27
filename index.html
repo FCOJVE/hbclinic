@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HB Clinic — Clínica y Servicios de Salud</title>
+  <meta name="description" content="HB Clinic — Atención médica de calidad. Conoce nuestros servicios, equipo y cómo contactarnos." />
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">HB Clinic</a>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+      <nav class="site-nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Bienvenido a HB Clinic</h1>
+        <p>Atención médica integral y personalizada para toda la familia. Calidad, cercanía y profesionalismo.</p>
+        <p class="cta"><a href="#contacto" class="btn-primary">Solicita una cita</a></p>
+      </div>
+    </section>
+
+    <section id="servicios" class="section container">
+      <h2>Servicios</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Medicina General</h3>
+          <p>Consultas, diagnóstico y seguimiento para adultos y niños.</p>
+        </article>
+        <article class="card">
+          <h3>Pediatría</h3>
+          <p>Cuidado especializado desde el nacimiento hasta la adolescencia.</p>
+        </article>
+        <article class="card">
+          <h3>Laboratorio</h3>
+          <p>Exámenes clínicos con entrega de resultados rápida y confiable.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="equipo" class="section alt">
+      <div class="container">
+        <h2>Nuestro equipo</h2>
+        <p>Profesionales altamente capacitados y con vocación de servicio.</p>
+        <div class="team">
+          <div class="person">
+            <div class="avatar">DR</div>
+            <h4>Dr. Juan Pérez</h4>
+            <p>Medicina General</p>
+          </div>
+          <div class="person">
+            <div class="avatar">MP</div>
+            <h4>Mg. María Gómez</h4>
+            <p>Pediatría</p>
+          </div>
+          <div class="person">
+            <div class="avatar">LS</div>
+            <h4>Lic. Sara López</h4>
+            <p>Técnica de Laboratorio</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ubicacion" class="section container">
+      <h2>Ubicación</h2>
+      <p>Calle Falsa 123, Ciudad — Horario: Lun-Vie 8:00–18:00</p>
+      <!-- Si quieres, puedo integrar mapa de Google Maps aquí -->
+    </section>
+
+    <section id="contacto" class="section contact alt">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>Para agendar una cita o pedir información, contáctanos:</p>
+
+        <div class="contact-grid">
+          <div>
+            <h3>Teléfono</h3>
+            <p><a href="tel:+56998845161">+56 9 9884 5161</a></p>
+            <h3>Email</h3>
+            <p><a href="mailto:hebeaclinic@gmail.com">hebeaclinic@gmail.com</a></p>
+          </div>
+
+          <div class="contact-action">
+            <p>Haz clic en el botón para abrir WhatsApp y enviar un mensaje rápido:</p>
+            <p>
+              <a class="btn-primary whatsapp" href="https://wa.me/56998845161?text=Hola%20HB%20Clinic%2C%20quiero%20agendar%20una%20cita." target="_blank" rel="noopener">
+                Enviar mensaje por WhatsApp
+              </a>
+            </p>
+            <p class="muted">O usa el correo electrónico si prefieres.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> HB Clinic — Todos los derechos reservados.</p>
+      <p class="muted">Diseño sencillo — Personaliza colores, textos e imágenes en assets/.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle del menú móvil
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+    btn && btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+
+    // Año en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
